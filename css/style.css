@@ -1,22 +1,33 @@
 /* -------------------------------------- *
 General Styles
 * --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Work Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
-
+header {
+  border: 1px solid black;
+  background-image: url(../images/banners/homepage-banner-alexander-ant.jpg);
+  background-size: cover;
+  height: 200px;
+  background-position: center center;
+}
+h1 {
+  padding-top: 85px;
+}
 h1,
 h2,
 h3 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Work Sans", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 main,
 header h1,
 nav div {
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 header {
@@ -31,4 +42,23 @@ nav a:hover {
 nav {
   background-color: #ccc;
   padding: 12px;
+}
+
+.socialLinks {
+  width: 75px;
+  padding-right: 50px;
+  padding-bottom: 75px;
+  padding-top: 15px;
+}
+
+.threeCol {
+  display: flex;
+}
+
+.threeCol article {
+  flex: 1;
+}
+
+.threeCol .description {
+  flex: 1.75;
 }
